@@ -44,6 +44,10 @@ public class DurationTest {
         System.out.println("formatDuration = " + formatDuration);
     }
 
+    /**
+     * 只计算到 日/小时/分钟/秒, 不会自动将日转换为月/年
+     * @throws ParseException
+     */
     @Test
     public void test2() throws ParseException {
         dateFormat = new SimpleDateFormat("yyyyMMdd hh:mm:ss");
